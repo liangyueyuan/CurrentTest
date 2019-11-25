@@ -7,6 +7,7 @@ import java.util.concurrent.Executors;
 //CountDownLatch它允许一个或多个线程一直等待，直到其他线程的操作执行完后再执行
 public class CountdownLatchTest {
     public static void main(String[] args) {
+
         ExecutorService service = Executors.newCachedThreadPool();
         final CountDownLatch cdOrder = new CountDownLatch(1);
         final CountDownLatch cdAnswer = new CountDownLatch(3);
