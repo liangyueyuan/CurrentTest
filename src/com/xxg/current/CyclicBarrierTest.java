@@ -31,6 +31,7 @@ public class CyclicBarrierTest {
                         System.out.println("线程" + Thread.currentThread().getName() + "即将达到集合地点3，当前已有" +
                                 (cb.getNumberWaiting() + 1) + "个已到达，" + (cb.getNumberWaiting() == 2 ? "都到齐了，继续走啊" : "正在等待"));
                         cb.await();
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
